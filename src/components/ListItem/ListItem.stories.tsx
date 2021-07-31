@@ -14,4 +14,4 @@ const Template: ComponentStory<typeof ListItem> = (args) => (
 );
 
 export const Default = Template.bind({});
-Default.args = {};
+Default.args = { children: "test" };

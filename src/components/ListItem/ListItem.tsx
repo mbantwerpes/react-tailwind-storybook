@@ -1,5 +1,10 @@
 interface ListItemProps {}
 
-export const ListItem = ({ ...props }: ListItemProps) => {
-  return <li className="list-none text-purple-600">Test</li>;
+export const ListItem = ({}: ListItemProps) => {
+  return (
+    <tr className="list-none text-purple-600">
+      <td>Tiger Nixon</td>
+      <td>System Architect</td>
+    </tr>
+  );
 };
