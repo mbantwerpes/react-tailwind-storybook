@@ -34,6 +34,7 @@ export const Input = ({ placeholder, type, size }: InputProps) => {
       type={type}
       placeholder={placeholder}
       onChange={handleChange}
+      value={value}
     />
   );
 };

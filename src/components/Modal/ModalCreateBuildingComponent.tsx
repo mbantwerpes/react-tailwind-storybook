@@ -12,10 +12,18 @@ export const ModalCreateBuildingComponent = ({
   onClickCancel,
   onClickSaveBuildingComponent,
 }: ModalCreateBuildingComponentProps) => {
+  const handleSubmit = (event: any) => {
+    event.preventDefault();
+    console.log("test");
+  };
+
   return (
     <div className="flex flex-col">
       <h3 className="text-2xl">Bauteil anlegen</h3>
-      <form className="grid gap-4 w-11/12 ml-auto mr-auto">
+      <form
+        onSubmit={handleSubmit}
+        className="grid gap-4 w-11/12 ml-auto mr-auto"
+      >
         <Input size="small" type="text" placeholder="Name.." />
         <Textarea size="small" placeholder="Beschreibung..." />
         <Input size="small" type="text" placeholder="Artikelnummer..." />
